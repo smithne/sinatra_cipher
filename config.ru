@@ -1,2 +1,2 @@
 require './sinatra_cipher.rb'
-run Sinatra::Aplication
+run Sinatra::Application
