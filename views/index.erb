@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Enter a message to be encrypted!
+    </p>
+    <form action='/encrypt'>
+        <label for="message_plain">Message:</label>
+        <input type='text' name='message_plain' />
+        <br>
+        <label for="offset">Number of characters to offset by:</label>
+        <input type='text' name='offset' size=2>
+        <input type='submit' value='Submit' />
+    </form>
+
+    <p>
+      <%= "Encrypted message: <br>" if message_encrypted != "" %>
+      <%= message_encrypted %>
+    </p>
+
+  </body>
+</html>
